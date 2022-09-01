@@ -78,10 +78,16 @@ Java 中的变量分为类变量（即静态变量，有static）-> JVM的方法
 
 四、异常
 ---
-1、异常概述于异常体系结构<br>
-一场对象都是派生自Throwable类（异常类中最大的父类）的一个类实例
+1、异常概述与异常体系结构<br>
+一场对象都是派生自Throwable类（异常类中最大的父类）的一个类实例<br>
 Error类:java虚拟机无法解决的严重问题,一般不编写针对性的代码解决 eg.堆溢出(outofMemoryError),栈溢出(StackMemory)<br>
 Exception类:分支为RuntimeException(运行时错误）--其他异常（编译时错误）<br>
-派生于Error类或RuntimeException类的所有异常称为`非检查类异常`，其他异常为`检查类异常`(进行相应处理)
+派生于Error类或RuntimeException类的所有异常称为`非检查类异常`，其他异常为`检查类异常`(进行相应处理)<br>
+RuntimeException类：NullPointerException（空指针异常）<br>
+ArrayIndexOutofBoundsException（数组越界异常）<br>
+ClassCastException（强制类型转换异常）<br>
+NumberFormatException（数字格式化异常）<br>
+InputMismatchException（输入不匹配异常）<br>
+ArithmeticException（数学错误）<br>
 
 
