@@ -76,6 +76,12 @@ Java 中的变量分为类变量（即静态变量，有static）-> JVM的方法
 6、this关键字使用(1、同c++this指针，指示隐式参数  2、使用this(相应参数),可在构造器中调用同一个类的另一个构造器<br>
 
 
+四、异常
 ---
+1、异常概述于异常体系结构<br>
+一场对象都是派生自Throwable类（异常类中最大的父类）的一个类实例
+Error类:java虚拟机无法解决的严重问题,一般不编写针对性的代码解决 eg.堆溢出(outofMemoryError),栈溢出(StackMemory)<br>
+Exception类:分支为RuntimeException(运行时错误）--其他异常（编译时错误）<br>
+派生于Error类或RuntimeException类的所有异常称为`非检查类异常`，其他异常为`检查类异常`(进行相应处理)
 
 
